@@ -62,7 +62,7 @@ export function DataTable<T extends { id: string | number }>({
             <th
               key={col.key}
               onClick={() => col.sortable && handleSort(col.key)}
-              className={\`p-2 border cursor-\${col.sortable ? "pointer" : "default"}\`}
+              className={`p-2 border cursor-${col.sortable ? "pointer" : "default"}`}
             >
               {col.title} {col.sortable && (sortKey === col.key ? (asc ? "▲" : "▼") : "↕")}
             </th>
