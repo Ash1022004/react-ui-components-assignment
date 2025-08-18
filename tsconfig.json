@@ -3,7 +3,7 @@
     "target": "ESNext",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "module": "ESNext",
-    "moduleResolution": "Bundler",
+    "moduleResolution": "Node",   // ✅ Use "Node" (Storybook expects this)
     "jsx": "react-jsx",
     "strict": true,
     "noEmit": true,
@@ -13,6 +13,6 @@
     "resolveJsonModule": true,
     "types": ["vitest/globals", "vite/client"]
   },
-  "include": ["src", ".storybook"],
+  "include": ["src", ".storybook", "src/**/*.stories.tsx", "src/**/*.stories.mdx"],
   "exclude": ["node_modules", "dist", "storybook-static"]
 }
