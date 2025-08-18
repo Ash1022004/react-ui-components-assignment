@@ -1,1 +1,6 @@
-# React UI Components Assignment\n\nRun `npm install` then `npm run dev`.
+# React UI Components Assignment
+
+## 📂 Project Setup
+```bash
+npm install
+npm run dev
