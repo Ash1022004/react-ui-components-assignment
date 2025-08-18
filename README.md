@@ -1,7 +1,5 @@
 # React UI Components Assignment
 
-# React UI Components Assignment
-
 ## 📝 Description of Approach
 
 The goal of this assignment was to build **reusable React UI components** using **TypeScript, TailwindCSS, and Storybook** for documentation and testing.
@@ -23,7 +21,7 @@ The goal of this assignment was to build **reusable React UI components** using 
 
 ### 🚀 Deployment
 - Configured for deployment on **Vercel** (builds with Vite).
-- Live demo: [react-ui-components-assignment-tmug-8s3qo5fqu.vercel.app](https://react-ui-assignment-ashish.vercel.app/)
+- Live demo:- [react-ui-components-assignment-tmug-8s3qo5fqu.vercel.app](https://react-ui-assignment-ashish.vercel.app/)
 
 ---
 
@@ -33,7 +31,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/Ash1022004/react-ui-components-assignment.git
-cd <react-ui-components-assignment>
+cd react-ui-components-assignment
 
 ## Install dependencies:
       npm install
@@ -46,4 +44,32 @@ cd <react-ui-components-assignment>
 To view components in isolation:
       npm run storybook
 
+##📂 Folder Structure
 
+.storybook/ # Storybook configuration
+│ ├── main.ts
+│ ├── preview.ts
+│ └── tsconfig.json
+│
+src/
+├── components/ # All reusable UI components
+│ ├── DataTable/
+│ │ ├── DataTable.tsx # DataTable component
+│ │ ├── DataTable.stories.tsx # Storybook stories for DataTable
+│ │ ├── DataTable.test.tsx # Unit tests for DataTable
+│ │ └── index.ts # Exports for DataTable
+│ │
+│ ├── InputField/
+│ │ ├── InputField.tsx # InputField component
+│ │ ├── InputField.stories.tsx # Storybook stories for InputField
+│ │ ├── InputField.test.tsx # Unit tests for InputField
+│ │ └── index.ts # Exports for InputField
+│
+├── index.ts # Central export file for all components
+│
+README.md # Project documentation
+package.json # Project dependencies & scripts
+tailwind.config.js # TailwindCSS configuration
+tsconfig.json # TypeScript configuration
+vercel.json # Vercel deployment configuration
+vite.config.ts # Vite bundler configuration
