@@ -18,16 +18,14 @@ const columns = [
   { key: "age", title: "Age", dataIndex: "age", sortable: true },
 ];
 
-// ✅ Create a typed alias
-type DataTableUser = typeof DataTable<User>;
-
-const meta: Meta<DataTableUser> = {
+// ✅ Meta definition (no generics needed here)
+const meta: Meta<typeof DataTable> = {
   title: "Components/DataTable",
-  component: DataTable as DataTableUser,  // ✅ force generic binding
+  component: DataTable,
 };
 export default meta;
 
-type Story = StoryObj<DataTableUser>;
+type Story = StoryObj<typeof DataTable>;
 
 export const Default: Story = {
   args: { data: users, columns, selectable: true },
@@ -38,14 +36,5 @@ export const Loading: Story = {
 };
 
 export const Empty: Story = {
-  args: { data: [], columns },
-};
-
-
-export const Loading: StoryObj<typeof DataTable<User>> = {
-  args: { data: [], columns, loading: true },
-};
-
-export const Empty: StoryObj<typeof DataTable<User>> = {
   args: { data: [], columns },
 };
