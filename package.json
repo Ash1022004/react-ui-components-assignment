@@ -5,11 +5,10 @@
   "type": "module",
   "scripts": {
   "dev": "vite",
-  "build": "build-storybook",
+  "build": "vite build",
   "preview": "vite preview",
   "storybook": "storybook dev -p 6006",
-  "build-storybook": "storybook build",
-  "build": "storybook build"
+  "build-storybook": "storybook build"
 },
   "dependencies": {
     "clsx": "^2.1.1",
