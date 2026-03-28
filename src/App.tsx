@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { DataTable, Column } from "./components/DataTable";
-import { InputField } from "./components/InputField";
+import { DataTable, Column } from "./components/DataTable/DataTable";
+import { InputField } from "./components/InputField/InputField";
 
 interface User {
   id: number;
